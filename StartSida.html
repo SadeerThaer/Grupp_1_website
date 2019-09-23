@@ -1,25 +1,56 @@
 <!DOCTYPE html>
 <html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
 <head>
     <link rel="Stylesheet" href="cssStruktur.css"/>
 
 </head>
 <body>
+<div id="imgGallary" class="container">
+  <img src="bilder/wp2742433.jpg" alt="" width="100%" height="300" />
+  <img src="bilder/wp2742456.jpg" alt="" width="100%" height="300" />
+  <img src="bilder/wp2742472.jpg" alt="" width="100%" height="300" />
+  <img src="bilder/thumb-1920-587777" alt="" width="100%" height="300" />
+</div>
+
+<script>
+(function(){
+      var imgLen = document.getElementById('imgGallary');
+      var images = imgLen.getElementsByTagName('img');
+      var counter = 1;
+
+      if(counter <= images.length){
+          setInterval(function(){
+              images[0].src = images[counter].src;
+              console.log(images[counter].src);
+              counter++;
+
+              if(counter === images.length){
+                  counter = 1;
+              }
+          },4000);
+      }
+})();
+</script>
+
+</head>
+
+<body>
+
 
     <ul>
       
         <li><a href="StartSida.html">Startsida</a></li>
         <li><a href="Portfoliosida.html">Portfoliosida</a></li>
-        <li><a href="KontaktaOss.html">Kontakta oss</a></li>
+        <li><a href="kontakt.html">Kontakta oss</a></li>
         <li><a href="OmOss.html">Om oss</a></li>
 
       </ul>
 
 <div style="padding:20px;margin-top:30px;background-color:white;height:1500px;">
-  <h1>Dett är Grupp 1</h1>
-  
-</div>
+  <h1 align="center" style="color:rgb(51, 12, 12)">Vällkommen till vår hemsida</h1>
 
+      
 </body>
 </html>

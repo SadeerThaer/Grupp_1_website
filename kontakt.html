@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Kontakt</title>
+        <meta charset="utf-8">
+        <link rel="Stylesheet" href="cssStruktur.css"/> 
+        <link href="https://fonts.googleapis.com/css?family=Barlow&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Vollkorn+SC&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        
+        <div class = banner><h1 id="bannerRubrik">Kontaktsida</h1></div>
+        <div class = sidorna>
+            <div class = mitten>
+            
+            
+           
+            <br>
+            <br>
+            <p class="kontaktText">Förnamn: <input id="fnamn" class="kontaktBox" type="text" onkeyup="boxColor('fnamn')"></p>
+            <p class="kontaktText">Efternamn:<input id="enamn" class="kontaktBox" type="text" onkeyup="boxColor('enamn')"></p>
+            <p class="kontaktText">Telefonnummer: <input id="telefon" class="kontaktBox" type="number" onkeyup="boxColor('telefon')"></p>
+            <p class="kontaktText">E-mail: <input id="email" class="kontaktBox" type="email" onkeyup="boxColor('email')"></p>
+            <p class="kontaktText" id="kontaktid">Skriv dina synpunkter här: <textarea id="meddelande" class="kontaktBox" type="text" onkeyup="boxColor('meddelande')"></textarea></p>
+            <br>
+            <p class="kontaktText"><button id="kontaktKnapp" onclick="clearBoxar()">Klar</button><br></p>
+            <p id = testatext></p>
+           
+            <script src="jquery-3.4.1.js"></script>
+            <script src="kontakt.js"></script>
+            <script> 
+                $(document).ready(function(){
+                    });
+                </script>
+            
+        </div>
+        </div>
+        
+         
+    </body>
+</html>
