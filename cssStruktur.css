@@ -12,51 +12,101 @@ h1#bannerRubrik{ font-family: 'Vollkorn SC', serif;}
 button#kontaktKnapp{float: right; margin-right: 30%; }
 
 
-/* Avser NavigBar */
+/* NavigBar */
 
 body {margin:0;}
 
 ul {
-  list-style-type: none;
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  list-style: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
   background-color: rgb(20, 68, 95);
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
+  height: 60px;
+  justify-content: center;
+  
+
 }
 
-li {
-  float: left;
+ul li {
+  margin: 0 1rem;
+  padding: 0rem;
+
 }
 
 li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 20px 22px;
   text-decoration: none;
+  text-transform: uppercase;
+}
+ul li a:hover{
+
+  color: rgb(255, 0, 0);
 }
 
-li a:hover:not(.active) {
-  background-color: #4CAF50;
+/* Bildspel */
+
+
+/*  Pergragh box */
+body 
+
+{
+  overflow-x: scroll;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-image: url(bilder/Multi-Color-Wallpaper.jpg);
 }
 
-.active {
-  background-color: #4CAF50;
+.bildBox {
+  background-color: rgb(255, 255, 255);
+  border: 5;
+  padding: 5px;
+  border-radius: 5px;
+}
+  
+.bildBox 
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  widows: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 5px 15px rgb(5, 5, 5);
+  display: flex;
 }
 
-/* Avser bildspel */
+.bildBox:hover
+{
+  box-shadow: 0 5px 30px rgb(255, 255, 255);
 
-.container{
-  position:relative;
-  width:100%;
-  height:300px;
-  border-radius:0px;
-  border:3px solid rgb(48, 45, 53);
-  overflow:hidden;
 }
 
-
-/*  Min egen CSS profilsida  */
+.bildBox .content h2
+{
+  margin: 0;
+  padding-left: 0;
+  color: #a10000;
+  font-size: 22px;
+}
+.bildBox .content p
+{
+    margin:0;
+    padding: 10px 0 0;
+    text-align: justify;
+    word-spacing: 0.1rem;
+    font-family: Arial, Helvetica, sans-serif, courier;
+}
