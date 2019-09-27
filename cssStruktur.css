@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: rgba(255, 0, 0, 0.726);
+  color: rgb(229, 255, 0);
 }
 /***************** SlidShow CSS kod***************/
 
@@ -135,7 +135,7 @@ slide p {
   text-align: center;
   left: 30px;
   padding-left:0;
-  color: rgb(121, 4, 255);
+  color: rgb(0, 0, 0);
   font-size: 40px;
 }
 
@@ -144,7 +144,7 @@ slide p {
   margin: 0;
   text-align: left;
   color: rgb(3, 1, 1);
-  font-size: 14px;
+  font-size: 15px;
   padding: 10px 0 0;
   text-align: justify;
   word-spacing: 0;
@@ -243,14 +243,16 @@ body{
 /*Kontakta oss sida*/
 
 .banner{
-
-height: 50%;
+padding: 5px;
+height: 10%;
 width: 100%;
 }
 
 p.kontaktText {
+ 
   color: #EEE;
-  position: relative;
+  text-align: left;
+  padding: 1em;
   left: 10%;
   font-size: 18px;
   font-family: 'Barlow', sans-serif;
@@ -258,7 +260,7 @@ p.kontaktText {
 
 .kontaktBox {
   float: right;
-  margin-right: 40%;
+  margin-right: 30%;
   width: 30%;
   font-family: 'Barlow', sans-serif;
 }
